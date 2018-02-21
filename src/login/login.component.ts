@@ -2,7 +2,7 @@ import {Component, Inject, OnInit} from "@angular/core";
 import { NgForm } from "@angular/forms";
 import { Router } from "@angular/router";
 import { HttpClient } from "@angular/common/http";
-import { GlobalContextService } from "@bds/nt-angular-context";
+import { GlobalContextService } from "@bds/nt-context";
 import { LoggedUser } from "../classes/logged-user";
 import {ModuleConfig} from "../module-config";
 
