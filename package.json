@@ -1,6 +1,6 @@
 {
   "name": "@bds/nt-login",
-  "version": "0.0.2",
+  "version": "1.0.2",
   "description": "module for login",
   "keywords": [
     "angular",
@@ -51,8 +51,8 @@
     "@angular/http": "^4.4.6",
     "@angular/platform-browser": "^4.4.6",
     "@angular/platform-browser-dynamic": "^4.0.0",
-    "@bds/nt-context": "latest",
-    "@bds/nt-entities": "latest",
+    "@bds/nt-context": "~1",
+    "@bds/nt-entities": "~1",
     "@ng-idle/core": "2.0.0-beta.12",
     "@ng-idle/keepalive": "2.0.0-beta.12",
     "angular2-moment": "^1.8.0",
@@ -116,7 +116,7 @@
     "@angular/http": "^4.4.6",
     "@angular/platform-browser": "^4.4.6",
     "@angular/platform-browser-dynamic": "^4.0.0",
-    "@bds/nt-entities": "0.0.2"
+    "@bds/nt-entities": "~1"
   },
   "distDependencies": {
     "angular2-moment": "^1.8.0"
