@@ -51,15 +51,16 @@
     "@angular/http": "^4.4.6",
     "@angular/platform-browser": "^4.4.6",
     "@angular/platform-browser-dynamic": "^4.0.0",
+    "@angular/router": "~4",
     "@bds/nt-context": "~1",
     "@bds/nt-entities": "~1",
     "@ng-idle/core": "2.0.0-beta.12",
     "@ng-idle/keepalive": "2.0.0-beta.12",
+    "ajv": "^6.0.0",
     "angular2-moment": "^1.8.0",
-    "@angular/router": "~4",
     "devextreme": "~17",
     "devextreme-angular": "~17",
-    "ajv": "^6.0.0"
+    "rxjs": "^5.5.6"
   },
   "devDependencies": {
     "@angular/compiler": "^4.0.0",
@@ -95,7 +96,6 @@
     "@bds/package-dist-creator": "latest",
     "raw-loader": "^0.5.1",
     "rimraf": "^2.6.1",
-    "rxjs": "^5.3.1",
     "sass-loader": "^6.0.5",
     "source-map-explorer": "^1.3.3",
     "to-string-loader": "^1.1.5",

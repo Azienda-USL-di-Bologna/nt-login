@@ -13,7 +13,8 @@ export class LoginGuard implements CanActivate {
         state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
 
         if (sessionStorage.getItem("token") === null) {
-            if (!state.url.startsWith(this.ntLoginConfig.loginComponentRoute)) {
+
+            if (!( state.url.substring( 0, this.ntLoginConfig.loginComponentRoute.length ) === this.ntLoginConfig.loginComponentRoute)) {
                 sessionStorage.setItem("redirectTo", state.url);
             }
             this.router.navigate([this.ntLoginConfig.loginComponentRoute]);
