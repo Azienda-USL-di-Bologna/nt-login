@@ -6,3 +6,5 @@ export { SessionManager } from "./utils/session-manager";
 export { JwtInterceptor } from "./utils/jwt.interceptor";
 export { UtilityFunctions } from "./utils/utility-functions";
 export { RefreshLoggedUserGuard } from "./guards/refresh-logged-user.guard";
+export { LoginGuard } from "./guards/login.guard";
+export { NoLoginGuard } from "./guards/no-login.guard";

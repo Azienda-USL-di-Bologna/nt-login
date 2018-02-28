@@ -8,6 +8,8 @@ import {HTTP_INTERCEPTORS} from "@angular/common/http";
 import {JwtInterceptor} from "./utils/jwt.interceptor";
 import {SessionManager} from "./utils/session-manager";
 import {RefreshLoggedUserGuard} from "./guards/refresh-logged-user.guard";
+import {LoginGuard} from "./guards/login.guard";
+import {NoLoginGuard} from "./guards/no-login.guard";
 
 /**
  * file di inizializzazione del modulo. Fa la funzione di app module in un progetto angular.
@@ -45,6 +47,8 @@ export class LoginModule {
                 UtilityFunctions,
                 SessionManager,
                 RefreshLoggedUserGuard,
+                LoginGuard,
+                NoLoginGuard,
                 {provide: "ntLoginConfig", useValue: ntLoginConfig} // in questo modo si definisce la variabile config in modo da porterla iniettare all'interno dei service
             ]
         };
