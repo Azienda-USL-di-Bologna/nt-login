@@ -5,7 +5,7 @@ import "rxjs/add/operator/map";
 export class JwtInterceptor implements HttpInterceptor {
 
     public static getToken(): string {
-        console.log("getToken() : " + JSON.stringify(sessionStorage.getItem("token")));
+        //console.log("getToken() : " + JSON.stringify(sessionStorage.getItem("token")));
         return sessionStorage.getItem("token");
     }
 
