@@ -20,8 +20,8 @@ import {NgIdleKeepaliveModule} from "@ng-idle/keepalive";
     imports: [
         CommonModule,
         FormsModule,
-        HttpClientModule,
-        NgIdleKeepaliveModule.forRoot(),
+        HttpClientModule
+        // NgIdleKeepaliveModule.forRoot(),
     ],
     declarations: [
         LoginComponent
