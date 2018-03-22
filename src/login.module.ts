@@ -11,6 +11,7 @@ import {RefreshLoggedUserGuard} from "./guards/refresh-logged-user.guard";
 import {LoginGuard} from "./guards/login.guard";
 import {NoLoginGuard} from "./guards/no-login.guard";
 import { HttpClientModule } from "@angular/common/http";
+import {NgIdleKeepaliveModule} from "@ng-idle/keepalive";
 
 /**
  * file di inizializzazione del modulo. Fa la funzione di app module in un progetto angular.
@@ -19,7 +20,8 @@ import { HttpClientModule } from "@angular/common/http";
     imports: [
         CommonModule,
         FormsModule,
-        HttpClientModule
+        HttpClientModule,
+        NgIdleKeepaliveModule.forRoot(),
     ],
     declarations: [
         LoginComponent

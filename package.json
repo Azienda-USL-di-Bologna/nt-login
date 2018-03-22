@@ -1,6 +1,6 @@
 {
   "name": "@bds/nt-login",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "module for login",
   "keywords": [
     "angular",
@@ -119,6 +119,5 @@
     "@bds/nt-entities": "~1"
   },
   "distDependencies": {
-    "angular2-moment": "^1.8.0"
   }
 }

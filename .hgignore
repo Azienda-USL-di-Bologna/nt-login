@@ -3,3 +3,4 @@ syntax: glob
 dist
 node_modules
 tmp
+yarn.lock
