@@ -10,6 +10,7 @@ import {SessionManager} from "./utils/session-manager";
 import {RefreshLoggedUserGuard} from "./guards/refresh-logged-user.guard";
 import {LoginGuard} from "./guards/login.guard";
 import {NoLoginGuard} from "./guards/no-login.guard";
+import { HttpClientModule } from "@angular/common/http";
 
 /**
  * file di inizializzazione del modulo. Fa la funzione di app module in un progetto angular.
@@ -17,7 +18,8 @@ import {NoLoginGuard} from "./guards/no-login.guard";
 @NgModule({
     imports: [
         CommonModule,
-        FormsModule
+        FormsModule,
+        HttpClientModule
     ],
     declarations: [
         LoginComponent
