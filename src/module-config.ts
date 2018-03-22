@@ -17,4 +17,8 @@ export interface ModuleConfig {
      * essere reindirizzato al componente di login
      */
     homeComponentRoute: string;
+    /**
+     * numero della porta quando si è in localhost
+     */
+    localhostPort: string;
 }

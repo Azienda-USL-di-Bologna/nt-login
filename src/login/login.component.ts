@@ -47,7 +47,7 @@ export class LoginComponent implements OnInit {
             this.loginURL = this.ntLoginConfig.loginURL;
         } else {
             const hostname: string = window.location.hostname;
-            const port: string = hostname === "localhost" ? ":10006" : ":443";
+            const port: string = hostname === "localhost" ? ":" + this.ntLoginConfig.localhostPort : ":443";
             this.loginURL = window.location.protocol + "//" + hostname + port + this.ntLoginConfig.relativeURL;
         }
 
